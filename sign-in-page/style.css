@@ -1,0 +1,164 @@
+/** @format */
+
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.main-container {
+  background: url(img/NG-en-20231113-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 3;
+  padding: 5rem;
+}
+
+.nav {
+  padding-bottom: 10rem;
+}
+
+.signup {
+  /* text-align: center; */
+  border: 0.2rem solid black;
+  /* background-color: rgb(13, 11, 11); */
+  background-color: rgba(13, 11, 11, 0.9);
+  color: white;
+  height: 90vh;
+  width: 30vw;
+  margin: auto;
+  padding-left: 5rem;
+  opacity: 1;
+}
+
+.p {
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  /* padding-bottom: 0.5rem; */
+  /* padding-bottom: 2rem; */
+  padding-left: 1rem;
+}
+
+input {
+  padding: 1rem 4rem;
+  margin: 0.1rem;
+  background-color: rgb(255, 255, 255, 0.3);
+
+  color: gray;
+  margin-bottom: 5rem;
+}
+
+.btn {
+  padding: 1rem 10rem;
+  margin-left: 1rem;
+  color: white;
+  background: red;
+  cursor: pointer;
+}
+
+.login {
+  margin-top: 8rem;
+}
+
+.facebook {
+  display: flex;
+  gap: 2rem;
+  /* flex-direction: column; */
+  margin-bottom: 2rem;
+}
+
+.facebook p {
+  font-size: 1.5rem;
+}
+
+.facebook img {
+  background-color: blue;
+}
+
+.login p {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  width: 20rem;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(13, 11, 11, 0.9);
+  margin-top: 15rem;
+  padding: 5rem;
+}
+
+.footer a {
+  color: gray;
+}
+
+.qus {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  /* margin: 2rem; */
+  gap: 2rem;
+}
+
+.qus-button {
+  padding: 1rem 2.5rem;
+  background-color: rgba(13, 11, 11, 0.9);
+  color: gray;
+}
+
+.qus2 {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-size: 1.5rem;
+}
+
+/* Media Query */
+
+@media (max-width: 63em) {
+  input {
+    padding: 1rem 0.5rem;
+  }
+
+  .btn {
+    padding: 1rem 5rem;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 48.5em) {
+  .signup {
+    margin: 0;
+    padding-left: 2rem;
+    width: 40vw;
+  }
+}
+
+@media (max-width: 35em) {
+  .signup {
+    width: 60vw;
+  }
+}
+
+@media (max-width: 30em) {
+  .signup {
+    width: 70vw;
+  }
+}

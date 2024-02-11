@@ -1,0 +1,349 @@
+/** @format */
+
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.main-container {
+  background-color: rgb(12, 12, 12);
+  /* color: white; */
+  width: 100%;
+}
+
+.first-section {
+  background: url(img/MoviePoster.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  /* height: 80vh; */
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* justify-items: center; */
+  padding: 2rem;
+  border: 0.2rem solid none;
+  background-color: black;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 8rem;
+  z-index: 100;
+}
+
+.left-nav {
+  display: flex;
+  gap: 2rem;
+  padding-left: 5rem;
+}
+
+.right-nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding-right: 5rem;
+}
+
+.nav-image {
+  width: 2rem;
+}
+
+.hero-section {
+  padding: 5rem;
+  margin-top: 5rem;
+}
+
+.hero-section h1 {
+  font-size: 5rem;
+  line-height: 2rem;
+}
+.hero-section h2 {
+  font-size: 2rem;
+  padding-left: 7rem;
+}
+
+.badge {
+  display: flex;
+  padding-top: 1rem;
+  gap: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+.badge p {
+  font-size: 2.5rem;
+}
+
+.hero-section p {
+  font-size: 2rem;
+  width: 50rem;
+  line-height: 2rem;
+  padding-bottom: 2rem;
+}
+
+.btn1 {
+  padding: 0.4rem 3rem;
+  border-radius: 0.8rem;
+  font-size: 1.7rem;
+  background-color: rgb(255, 255, 255);
+  margin: 2rem;
+}
+
+.btn2 {
+  padding: 0.4rem 4rem;
+  border-radius: 0.8rem;
+  background-color: rgb(255, 255, 255, 0.3);
+  color: rgb(255, 255, 255);
+}
+
+.movie-pictures {
+  width: 100%;
+  padding-left: 6rem;
+}
+
+.movie-pictures p {
+  font-size: 2rem;
+  color: white;
+  margin-top: 5rem;
+  margin-bottom: 1.5rem;
+}
+
+.movie-pictures img {
+  width: 19.8%;
+  height: 17rem;
+  gap: 3rem;
+}
+
+.mid-section {
+  width: 100%;
+  padding-left: 6rem;
+}
+
+.mid-section p {
+  font-size: 2rem;
+  color: white;
+  margin-top: 5rem;
+  margin-bottom: 1.5rem;
+}
+
+.mid-section img {
+  width: 9.8%;
+  height: 25rem;
+}
+
+.harry-potter {
+  width: 100%;
+  padding-left: 6rem;
+}
+
+.harry-potter p {
+  font-size: 2rem;
+  color: white;
+  margin-top: 10rem;
+  margin-bottom: 1.5rem;
+}
+
+.harry-potter img {
+  width: 15%;
+  height: 18rem;
+  gap: 2rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 8rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  /* flex-direction: column; */
+}
+
+.first-link {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.first-link img {
+  padding: 1rem;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: gray;
+  font-weight: bold;
+}
+
+.btn-footer {
+  border: 0.2rem solid gray;
+  padding: 1rem 2rem;
+  background-color: black;
+  color: gray;
+}
+
+.first-link p {
+  color: gray;
+  font-size: 1rem;
+}
+
+.second-link {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin-top: 8rem;
+  padding-right: 8rem;
+}
+
+/* Media Query */
+
+@media (max-width: 66.2em) {
+  .movie-pictures img {
+    width: 19%;
+    height: 10rem;
+  }
+
+  .mid-section img {
+    width: 9%;
+  }
+}
+
+@media (max-width: 56.3em) {
+  .left-nav {
+    padding-left: 1rem;
+  }
+
+  .left-nav img {
+    width: 4rem;
+  }
+
+  .left-nav h1 {
+    font-size: 1rem;
+  }
+
+  .right-nav {
+    padding-right: 1rem;
+  }
+  .nav-image {
+    width: 1rem;
+  }
+
+  .right-nav img {
+    width: 1rem;
+  }
+
+  .hero-section h1 {
+    font-size: 3rem;
+    line-height: 2rem;
+  }
+  .hero-section h2 {
+    font-size: 1rem;
+    padding-left: 4rem;
+  }
+
+  .badge p {
+    font-size: 1.5rem;
+  }
+  .badge img {
+    height: 1.8rem;
+  }
+
+  .hero-section p {
+    font-size: 1.5rem;
+    width: 35rem;
+    line-height: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+@media (max-width: 54.5em) {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn1 {
+    /* padding: 0.4rem 1rem; */
+    display: flex;
+  }
+
+  .hero-section {
+    /* padding-left: 10rem; */
+  }
+}
+
+@media (max-width: 36.9em) {
+  .left-nav img {
+    width: 2rem;
+  }
+
+  .left-nav {
+    padding: 0.5rem;
+    gap: 1rem;
+  }
+
+  .right-nav {
+    gap: 1rem;
+  }
+
+  .right-nav h1 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 29.3em) {
+  .left-nav h1 {
+    display: none;
+  }
+
+  .left-nav img {
+    width: 5rem;
+  }
+
+  .hero-section {
+    padding-left: 4rem;
+  }
+
+  .hero-section p {
+    font: size 1rem;
+    /* line-height: 1rem; */
+    width: 25rem;
+  }
+
+  .movie-pictures {
+    padding-left: 1rem;
+  }
+
+  .mid-section {
+    padding-left: 1rem;
+  }
+
+  .harry-potter {
+    padding-left: 1rem;
+  }
+}
+
+@media (max-width: 18.5em) {
+  .right-nav {
+    display: none;
+  }
+
+  .hero-section {
+    padding-left: 2rem;
+  }
+
+  .hero-section p {
+    width: 20rem;
+  }
+}
